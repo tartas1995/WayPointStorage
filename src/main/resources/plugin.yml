@@ -1,0 +1,37 @@
+name: WayPointStorage
+version: '${project.version}'
+main: me.tartas1995.waypointstorage.WayPointStorage
+api-version: 1.19
+prefix: WayPointStorage
+authors: [ tartas1995 ]
+description: User can storage and share WayPoints on the server
+commands:
+  createWayPoint:
+    description: Create WayPoint at your current position with the provided Name for all players to see
+    usage: /<command> NAME
+    aliases:
+      - makeWayPoint
+      - cwp
+      - mwp
+  deleteWayPoint:
+    description: delete WayPoint with the provided Name
+    usage: /<command> NAME
+    aliases:
+      - removeWayPoint
+      - dwp
+      - rwp
+  showWayPoint:
+    description: show the coordinates of the Waypoint with the provided name
+    usage: /<command> NAME
+    aliases:
+      - viewWayPoint
+      - getWayPoint
+      - swp
+      - vwp
+      - gwp
+  listWayPoints:
+    description: lists all the WayPoints
+    usage: /<command>
+    aliases:
+      - lwp
+      - showWayPoints
